@@ -50,7 +50,7 @@
 		//                         | SPC |       |      |
 		&kp ESC 	&trans 		&trans		&trans	 	 	&kp MINUS 	&kp EQUAL		&kp LBKT 	&kp RBKT
 		&kp LSHFT 	&trans 		&kp P		&trans			&kp BSLH	&kp GRAVE		&trans  	&trans 
-		&kp LCTRL 	&kp LGUI 	&kp LALT 	&trans  		&trans  	&trans			&trans		&trans
+		&kp LCTRL 	&kp LGUI 	&kp LALT 	&kp RET	     		&trans  	&trans			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
