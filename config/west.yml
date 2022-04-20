@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: 05bmckay
-      url-base: https://github.com/05bmckay
+    - name: benvallack
+      url-base: https://github.com/benvallack
   projects:
     - name: zmk
-      remote: 05bmckay
+      remote: benvallack
       revision: mouse-pr
       import: app/west.yml
   self:
