@@ -133,7 +133,7 @@
 		};
        		raised_layer {
 		bindings = <
-		&kp ESC 	&trans 		&trans		&trans 	 	&kp MINUS 	&kp EQUAL	&kp LBKT 	&kp RBKT
+		&kp ESC 	&bt BT_PRV 	&bt BT_NXT	&bt BT_CLR 	&kp MINUS 	&kp EQUAL	&kp LBKT 	&kp RBKT
 		&kp LSHFT 	&trans 		&trans		&trans		&kp BSLH	&kp GRAVE	&trans  	&kp RET
 		&kp LCTRL 	&kp LGUI 	&kp LALT 	&kp RET	     	&trans  	&trans		&trans		&trans
 								&to 0	 	&trans
