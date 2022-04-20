@@ -6,8 +6,113 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
+
+&mt {
+    tapping-term-ms = <201>;
+    flavor = "tap-preferred";
+ };
+&sk {
+     release-after-ms = <2000>;
+     quick-release;
+ };
+ 
+/* Layers */
+#define AL1 0
+#define GM 1
+#define AL2 1
+#define AL2U 1
+#define SM1 1
+#define SM2 1	
+#define NM1 1	
+#define SYS 1
+#define BT 1	
+/ { 
+    combos {
+        compatible = "zmk,combos";
+        combo_game {
+            timeout-ms = <30>;
+	    key-positions = <2 3 4 5>;
+            bindings = <&to GM>;
+        };
+        combo_sys {
+            timeout-ms = <30>;
+	    key-positions = <4 5 6>;
+            bindings = <&to SYS>;
+        };
+        combo_caps {
+            timeout-ms = <30>;
+	    key-positions = <12 13 14>;
+            bindings = <&caps_word>;
+        };
+        combo_bt  {
+            timeout-ms = <10>;
+            key-positions = <13 14>;
+            bindings = <&to BT>;
+	    layers = <SM1>; 
+        };
+        lalt {
+            timeout-ms = <20>;
+	    key-positions = <10 11>;
+            bindings = <&kp LALT>; 
+	    layers = <SYS>; 
+        };
+        lclk {
+            timeout-ms = <20>;
+	    key-positions = <12	13>;
+            bindings = <&mkp LCLK>;
+	    layers = <SYS>;
+        };
+        rclk {
+            timeout-ms = <20>;
+	    key-positions = <4 5>;
+            bindings = <&mkp RCLK>;
+	    layers = <SYS>;
+        };
 
 
+    };
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        sr: shift_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&to>;
+	    retro-tap;
+        };
+        hl: homerow_layers {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&sl>, <&kp>;
+        };
+	td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPDANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
        keymap {
                 compatible = "zmk,keymap";
                 
@@ -35,4 +140,6 @@
 								&trans	 	&trans
 		>;
 		};
+        
+	};
 };
