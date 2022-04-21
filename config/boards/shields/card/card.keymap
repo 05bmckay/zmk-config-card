@@ -125,7 +125,7 @@
 		};
        		lower_layer {
 		bindings = <
-		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp DELETE  
+		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp BSPC  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp D		&kp SEMI	&kp SQT		&kp RCTRL
 		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 2	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
@@ -142,14 +142,14 @@
 		default_layer_qwerty {
 		bindings = <
 		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I  
-		&kp A		&kp S		&kp D		&kp F 	 	&kp J		&kp K		&kp L		&kp P
-		&kp Z		&kp X		&kp C		&kp V           &kp B		&kp N		&kp M		&kp O
+		&kp Z		&kp S		&kp D		&kp F 	 	&kp J		&kp K		&kp L		&kp O
+		&kp A		&kp X		&kp C		&kp V           &kp B		&kp N		&kp M		&kp P
 								&mo 4	 	&kp SPACE 
 		>;
 		};
        		lower_layer_qwerty {
 		bindings = <
-		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp DELETE  
+		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp BSPC  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp H		&kp SEMI	&kp SQT		&kp RCTRL
 		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 4	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
