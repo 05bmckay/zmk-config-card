@@ -120,14 +120,14 @@
 		&kp Q		&kp W		&kp F		&kp P		&kp J		&kp L		&kp U		&kp Y  
 		&kp Z		&kp R		&kp S		&kp T 	 	&kp N		&kp E		&kp I		&kp COMMA
 		&kp A		&kp X		&kp C		&kp V           &kp B		&kp K		&kp M		&kp O
-								&tog 1	 	&kp SPACE 
+								&mo 1	 	&kp SPACE 
 		>;
 		};
        		lower_layer {
 		bindings = <
 		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp MINUS	&kp N0		&kp DEL  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp D		&kp SEMI	&kp SQT		&kp SLASH
-		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&tog 2	        &kp DOT	 	&kp RSHIFT
+		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 2	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
 		>;
 		};
@@ -136,7 +136,7 @@
 		&kp ESC 	&bt BT_PRV 	&bt BT_NXT	&bt BT_CLR 	&kp MINUS 	&kp EQUAL	&kp LBKT 	&kp RBKT
 		&kp LCTRL 	&trans 		&trans		&trans		&kp BSLH	&kp GRAVE	&trans  	&trans
 		&kp LSHFT 	&kp LGUI 	&kp LALT 	&kp RET	     	&trans  	&trans		&trans		&kp RET
-								&to 0	 	&trans
+								&trans 	 	&trans
 		>;
 		};
         
