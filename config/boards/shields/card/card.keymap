@@ -125,7 +125,7 @@
 		};
        		lower_layer {
 		bindings = <
-		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp BSPC  
+		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp TAB 	&kp BSPC  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp D		&kp SEMI	&kp SQT		&kp RCTRL
 		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 2	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
@@ -149,7 +149,7 @@
 		};
        		lower_layer_qwerty {
 		bindings = <
-		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp MINUS	&kp BSPC  
+		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp TAB 	&kp BSPC  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp H		&kp SEMI	&kp SQT		&kp RCTRL
 		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 5	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
