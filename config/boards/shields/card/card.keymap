@@ -115,43 +115,19 @@
        keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
-		bindings = <
-		&kp Q		&kp W		&kp F		&kp P		&kp J		&kp L		&kp U		&kp Y  
-		&kp Z		&kp R		&kp S		&kp T 	 	&kp N		&kp E		&kp I		&kp COMMA
-		&kp A		&kp X		&kp C		&kp V           &kp B		&kp K		&kp M		&kp O
-								&mo 1	 	&kp SPACE 
-		>;
-		};
-       		lower_layer {
-		bindings = <
-		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp TAB 	&kp BSPC  
-		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp D		&kp SEMI	&kp SQT		&kp RCTRL
-		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&mo 2	        &kp DOT	 	&kp RSHIFT
-								&trans	 	&kp RET
-		>;
-		};
-       		raised_layer {
-		bindings = <
-		&kp ESC 	&bt BT_PRV 	&bt BT_NXT	&bt BT_CLR 	&kp K_UNDO      &kp UP         	&kp LBKT 	&kp RBKT
-		&kp LCTRL 	&tog 3 		&kp MINUS	&kp EQUAL	&kp LEFT  	&kp DOWN        &kp RIGHT  	&kp RCTRL
-		&kp LSHFT 	&kp LGUI 	&kp LALT 	&kp SLASH	&kp BSLH       	&trans		&kp GRAVE	&kp RSHIFT
-								&kp SPACE 	&kp RET
-		>;
-		};
 		default_layer_qwerty {
 		bindings = <
 		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I  
 		&kp Z		&kp S		&kp D		&kp F 	 	&kp J		&kp K		&kp L		&kp O
 		&kp A		&kp X		&kp C		&kp V           &kp B		&kp N		&kp M		&kp P
-								&mo 4	 	&kp SPACE 
+								&mo 1	 	&kp SPACE 
 		>;
 		};
        		lower_layer_qwerty {
 		bindings = <
 		&kp ESC		&kp N1		&kp N2		&kp N3		&kp G		&kp N0          &kp TAB 	&kp BSPC  
 		&kp LCTRL	&kp N4		&kp N5		&kp N6		&kp H		&kp SEMI	&kp SQT		&kp RCTRL
-		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&tog 5	        &kp DOT	 	&kp RSHIFT
+		&kp LSHFT	&kp N7		&kp N8		&kp N9		&kp H		&tog 2	        &kp DOT	 	&kp RSHIFT
 								&trans	 	&kp RET
 		>;
 		};
@@ -159,7 +135,7 @@
 		bindings = <
 		&kp ESC 	&bt BT_PRV 	&bt BT_NXT	&bt BT_CLR 	&kp K_UNDO      &kp UP         	&kp LBKT 	&kp RBKT
 		&kp LCTRL 	&tog 0 		&kp MINUS	&kp EQUAL	&kp LEFT  	&kp DOWN        &kp RIGHT  	&kp RCTRL
-		&kp LSHFT 	&kp LGUI 	&kp LALT 	&kp SLASH	&kp BSLH       	&tog 4		&kp GRAVE	&kp RSHIFT
+		&kp LSHFT 	&kp LGUI 	&kp LALT 	&kp SLASH	&kp BSLH       	&trans 		&kp GRAVE	&kp RSHIFT
 								&kp SPACE 	&kp RET
 		>;
 		};
