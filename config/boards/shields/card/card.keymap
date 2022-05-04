@@ -134,7 +134,7 @@
        		raised_layer_qwerty {
 		bindings = <
 		&kp ESC 	&bt BT_PRV 	&bt BT_NXT	&bt BT_CLR 	&kp K_UNDO      &kp UP         	&kp LBKT 	&kp RBKT
-		&kp LCTRL 	&tog 0 		&kp MINUS	&kp EQUAL	&kp LEFT  	&kp DOWN        &kp RIGHT  	&kp RCTRL
+		&kp LCTRL 	&tog 1 		&kp MINUS	&kp EQUAL	&kp LEFT  	&kp DOWN        &kp RIGHT  	&kp RCTRL
 		&kp LSHFT 	&kp LGUI 	&kp LALT 	&kp SLASH	&kp BSLH       	&trans 		&kp GRAVE	&kp RSHIFT
 								&kp SPACE 	&kp RET
 		>;
